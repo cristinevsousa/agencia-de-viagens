@@ -11,71 +11,110 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
                 <li><a href="#news">News</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="index.html">Home</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="banner">
-            <!-- <img class="img-banner" src="imgs/florianopolis.jpg" alt="florianopolis"  /> -->
-        </div>
+        <div class="slider">
+
+            <div class="slides">
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <div class="slide first">
+                    <img src="imgs/img1.jpg" alt="paris" />
+                </div>
+                <div class="slide">
+                    <img src="imgs/img2.jpg" alt="paris" />
+                </div>
+                <div class="slide">
+                    <img src="imgs/img3.jpg" alt="paris" />
+                </div>
+                
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+       </div>
         <div class="txt-h3">
             <h3>Veja todos os nossos pacotes disponíveis</h2>
         </div>
-   
-            <div class="row">
-                <div class="column">
-                    <div class="card" style="background-image: url('imgs/gramado.jpg');">
-                        <!-- <img src="imgs/gramado.jpg" alt="gramado"/> -->
-                    </div>
-                    <button type="button">Detalhes</button>
+        <div class="content">
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="imgs/gramado.jpg" alt="gramado" width="100%" title="Gramado"/>
                 </div>
-                <div class="column">
-                    <div class="card" style="background-image: url('imgs/berlin.jpg');">
-                        <!-- <img src="imgs/berlin.jpg" alt="berlin" /> -->
-                    </div>
-                    <button type="button">Detalhes</button>
-                </div>
-                <div class="column">
-                    <div class="card" style="background-image: url('imgs/milan.jpg');">
-                        <!-- <img src="imgs/milan.jpg" alt="milan" /> -->
-                    </div>
-                    <button type="button">Detalhes</button>
+                <div class="card-btn">
+                    <button type="button" onclick="document.location='gramado.html'">Detalhes</button>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="column">
-                    <div class="card" style="background-image: url('imgs/natal.jpg');">
-                        <!-- <img src="imgs/natal.jpg" alt="natal" /> -->
-                    </div>
-                    <button type="button">Detalhes</button>
+            <div class="card">
+                <div class="card-img">
+                    <img src="imgs/paris.jpg" alt="paris" width="100%" title="Paris"/>
                 </div>
-                <div class="column">
-                    <div class="card" style="background-image: url('imgs/buenos_aires.jpg');">
-                        <!-- <img src="imgs/buenos_aires.jpg" alt="buenos_aires" /> -->
-                    </div>
-                    <button type="button">Detalhes</button>
-                </div>
-                <div class="column">
-                    <div class="card" style="background-image: url('imgs/paris.jpg');">
-                        <!-- <img src="imgs/paris.jpg" alt="paris" /> -->
-                    </div>
-                    <button type="button">Detalhes</button>
+                <div class="card-btn">
+                    <button type="button" onclick="document.location='gramado.html'">Detalhes</button>
                 </div>
             </div>
-        
-        <footer>
-            <address>
-                <p>Para maiores contatos.</p>
-                <a href="#">jfk@jfx.com.br</a>
-            </address>
-            <p>Copyright 2022 - Todos os direitos reservados.</p>
-        </footer>
-
+            <div class="card">
+                <div class="card-img">
+                    <img src="imgs/berlin.jpg" alt="berlin" width="100%" title="Berlim"/>
+                </div>
+                <div class="card-btn">
+                    <button type="button" onclick="document.location='gramado.html'">Detalhes</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="imgs/florianopolis.jpg" alt="florianopolis" width="100%" title="Florianópolis"/>
+                </div>
+                <div class="card-btn">
+                    <button type="button" onclick="document.location='gramado.html'">Detalhes</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="imgs/milan.jpg" alt="milão" width="100%" title="Milão"/>
+                </div>
+                <div class="card-btn">
+                    <button type="button" onclick="document.location='gramado.html'">Detalhes</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="imgs/natal.jpg" alt="natal" width="100%" title="Natal"/>
+                </div>
+                <div class="card-btn">
+                    <button type="button" onclick="document.location='gramado.html'">Detalhes</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <address>
+            <p>Para maiores contatos.</p>
+            <a href="#">jfk@jfx.com.br</a>
+        </address>
+        <p>Copyright 2022 - Todos os direitos reservados.</p>
+    </footer>
+    <script src="./index.js"></script>
 </body>
 
 </html>

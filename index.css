@@ -1,94 +1,193 @@
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
 }
 
 li {
-    float: right;
+  float: right;
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
 }
 
 li a:hover {
-    background-color: #111111;
+  background-color: #111111;
 }
 
-button {
-    margin: 15px 0px 0px 100px;
-    border-radius: 7px;
-    border: solid 1px;
-    background-color: #04AA6D;
-    padding: 2px 6px 2px 6px;
-    font: bold 11px Arial;
-    cursor: pointer;
-    text-align: center;
+/* Inicio estilização dos slides */
+.slider {
+  margin: 0 auto;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides { 
+  width: 400%;
+  height: 400px; 
+  display: flex; 
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+  transition: 0.5s;
+}
+ 
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.manual-navigation {
+  position: absolute;
+  width: 100%;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+} 
+
+.manual-btn:hover {
+  background-color: white;
+} 
+ 
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -50%;
+} 
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: white;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: white;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: white;
+}
+
+.navigation-auto div{
+  border: 2px solid #04AA6D;  
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navigation-auto {
+  position: absolute;
+  width: 100%;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+} 
+/* Final estilização dos slides */
+
+main{
+  padding: 0px
+}
+
+.txt-h3{
+  margin: 50px 0 0 250px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  padding: 200px;
+  margin-top: -170px;
+}
+
+.card {
+  /* background-color: #04AA6D; */
+  border-radius: .6rem;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 280px;
+}
+
+.card-img {
+  /* background-color: #b5b9c1; */
+  display: flex;
+  flex: 4;
+  overflow: hidden;
+}
+
+.card-img img {
+  border-radius: 6px;
+}
+
+.card-btn {
+  /* background-color: #606570; */
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+}
+
+button {  
+  cursor: pointer;
+  margin:auto;
+  margin-top: 12px;
+  height: 25%;
+  width: 25%;
+  font: bold 11px Arial;
+  border-radius: 7px;
+  border: solid 1px;
+  background-color: #04AA6D;  
 }
 
 button:hover {
-    background-color: #128058;
-}
-
-.banner {
-    background-image: url(imgs/florianopolis.jpg);
-    display: block;
-    border: #111111 solid 4px;
-    height: 300px;
-    background-size:100% 100% 
-}
-
-.txt-h3 {
-    margin: 20px 150px;
-}
-
-/* Float four columns side by side */
-.column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-}
-
-/* Remove extra left and right margins, due to padding in columns */
-.row {
-    margin: 0px 100px;
-    padding: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Style the counter cards */
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    /* this adds the "card" effect */
-    padding: 70px;
-    text-align: end;
-    background-color: #f1f1f1;   
-}
-
-/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
+  background-color: #04754c;
 }
