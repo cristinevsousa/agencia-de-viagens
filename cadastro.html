@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./cadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="cadastro.html">Cadastro</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <section class="form-section">
+        <div class="form-wrapper">
+          <form action="" id="form">
+            <h1>Cadastro de novo usuário</h1>
+            <div class="input-block">
+              <label for="nome">Nome Completo:</label>
+              <input type="nome" id="nome" />
+            </div>
+            <div class="input-block">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" />
+            </div>
+            <div class="input-block">
+              <label for="data">Data de nascimento:</label>
+              <input type="date" id="data-nasc" />
+            </div>
+            <div class="input-block">
+              <label for="estado">Estado:</label>
+              <select id="estado" name="estado">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+            </select>
+            </div>
+            <div class="input-block">
+              <label for="endereco">Endereço:</label>
+              <input type="endereco" id="endereco" />
+            </div>
+            <div class="input-flex">
+              <p>Sexo:</p>
+              <input type="radio" id="feminino" name="fav_language" value="Feminino" />
+              <label for="feminino" id="mlabel">Feminino</label>
+              <input type="radio" id="masculino" name="fav_language" value="Masculino"/>
+              <label for="masculino" id="mlabel">Masculino</label>             
+            </div>
+            <div class="input-flex">
+              <p>Categorias de interesse (marque mais de uma):</p>
+              <input type="checkbox" id="praia" name="praia" value="praia">
+              <label for="praia" id="mlabel"> Praia</label>
+              <input type="checkbox" id="campo" name="campo" value="Campo">
+              <label for="campo" id="mlabel"> Campo</label>
+              <input type="checkbox" id="nacionais" name="nacionais" value="Nacionais">
+              <label for="nacionais" id="mlabel"> Nacionais</label>
+              <input type="checkbox" id="internacionais" name="internacionais" value="Internacionais">
+              <label for="internacionais" id="mlabel"> Internacionais</label>
+              <input type="checkbox" id="serra" name="serra" value="Serra">
+              <label for="serra" id="mlabel"> Serra</label>
+              <input type="checkbox" id="cidade" name="cidade" value="Cidade">
+              <label for="cidade" id="mlabel"> Cidade</label>
+            </div>
+            <div class="input-block">
+              <label for="login-email">Email</label>
+              <input type="email" id="login-email" />
+            </div>
+            <div class="input-block">
+              <label for="login-password">Senha</label>
+              <input type="password" id="login-password" />
+            </div>
+            <div class="login-btn">
+              <button type="button" class="btn-limpar" onclick="document.location='index.html'">Limpar</button>
+              <button type="button" class="btn-salvar" onclick="document.location='cadastro.html'">Salvar</button>
+          </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <address id="footer1">
+            <p>Para maiores contatos</p>
+            <p><a href="#">jfk@jfx.com.br</a></p>
+        </address>
+        <p id="footer2">Copyright 2022 - Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

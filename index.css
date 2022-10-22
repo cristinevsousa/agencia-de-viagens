@@ -180,14 +180,31 @@ button {
   cursor: pointer;
   margin:auto;
   margin-top: 12px;
-  height: 25%;
-  width: 25%;
-  font: bold 11px Arial;
-  border-radius: 7px;
+  min-width: 70px;
   border: solid 1px;
-  background-color: #04AA6D;  
+  background-color: #098a5b;
+  color: white;
+  border-radius: 7px;
+  padding: 7px;   
+  cursor: pointer;
 }
 
 button:hover {
   background-color: #04754c;
+}
+
+footer{
+  margin-top: 15px;
+  background-color: #333333;
+}
+
+#footer1{
+  margin-left: 10px;
+  
+}
+
+#footer2{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
 }
