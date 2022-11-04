@@ -137,7 +137,7 @@ main{
   padding: 0px
 }
 
-.txt-h3{
+.txt-h1{
   margin: 50px 0 0 250px;
 }
 
@@ -201,6 +201,11 @@ footer{
 #footer1{
   margin-left: 10px;
   
+}
+
+#footer1 a{
+  color: white;
+  text-decoration: none;
 }
 
 #footer2{

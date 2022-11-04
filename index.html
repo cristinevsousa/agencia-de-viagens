@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="JFK é uma agência de viagens que oferece diversos pacotes de viagens nacionais e internacionais">
+    <link rel="canonical" href="www.jfkviagens.com.br">
+    <meta name="author" content="JFK Viagens">
+    <meta name="robots" content="index">
     <link rel="stylesheet" href="./index.css">
-    <title>JFK</title>
+    <title>JFK - Pacotes de Viagens</title>
 </head>
 
 <body>
@@ -19,10 +23,8 @@
         </nav>
     </header>
     <main>
-        <div class="slider">
-
+        <header class="slider">
             <div class="slides">
-
                 <input type="radio" name="radio-btn" id="radio1">
                 <input type="radio" name="radio-btn" id="radio2">
                 <input type="radio" name="radio-btn" id="radio3">
@@ -36,24 +38,21 @@
                 <div class="slide">
                     <img src="imgs/img3.jpg" alt="paris" />
                 </div>
-                
+               
                 <div class="navigation-auto">
                     <div class="auto-btn1"></div>
                     <div class="auto-btn2"></div>
                     <div class="auto-btn3"></div>
                 </div>
-
             </div>
-
             <div class="manual-navigation">
                 <label for="radio1" class="manual-btn"></label>
                 <label for="radio2" class="manual-btn"></label>
                 <label for="radio3" class="manual-btn"></label>
             </div>
-
-       </div>
-        <div class="txt-h3">
-            <h3>Veja todos os nossos pacotes disponíveis</h2>
+        </header>
+        <div class="txt-h1">
+            <h1>Veja todos os nossos pacotes de viagens disponíveis</h1>
         </div>
         <div class="content">
 
@@ -62,7 +61,7 @@
                     <img src="imgs/gramado.jpg" alt="gramado" width="100%" title="Gramado"/>
                 </div>
                 <div class="card-btn">
-                    <button type="button" onclick="document.location='gramado.html'">Detalhes</button>
+                    <button type="button" onclick="document.location='Pacotes/gramado.html'">Detalhes</button>
                 </div>
             </div>
             <div class="card">
@@ -70,7 +69,7 @@
                     <img src="imgs/paris.jpg" alt="paris" width="100%" title="Paris"/>
                 </div>
                 <div class="card-btn">
-                    <button type="button" onclick="document.location='gramado.html'">Detalhes</button>
+                    <button type="button" onclick="document.location='Pacotes/paris.html'">Detalhes</button>
                 </div>
             </div>
             <div class="card">
@@ -78,7 +77,7 @@
                     <img src="imgs/berlin.jpg" alt="berlin" width="100%" title="Berlim"/>
                 </div>
                 <div class="card-btn">
-                    <button type="button" onclick="document.location='gramado.html'">Detalhes</button>
+                    <button type="button" onclick="document.location='Pacotes/berlim.html'">Detalhes</button>
                 </div>
             </div>
             <div class="card">
@@ -86,7 +85,7 @@
                     <img src="imgs/florianopolis.jpg" alt="florianopolis" width="100%" title="Florianópolis"/>
                 </div>
                 <div class="card-btn">
-                    <button type="button" onclick="document.location='gramado.html'">Detalhes</button>
+                    <button type="button" onclick="document.location='Pacotes/florianopolis.html'">Detalhes</button>
                 </div>
             </div>
             <div class="card">
@@ -94,7 +93,7 @@
                     <img src="imgs/milan.jpg" alt="milão" width="100%" title="Milão"/>
                 </div>
                 <div class="card-btn">
-                    <button type="button" onclick="document.location='gramado.html'">Detalhes</button>
+                    <button type="button" onclick="document.location='Pacotes/milao.html'">Detalhes</button>
                 </div>
             </div>
             <div class="card">
@@ -102,17 +101,17 @@
                     <img src="imgs/natal.jpg" alt="natal" width="100%" title="Natal"/>
                 </div>
                 <div class="card-btn">
-                    <button type="button" onclick="document.location='gramado.html'">Detalhes</button>
+                    <button type="button" onclick="document.location='/Pacotes/natal.html'">Detalhes</button>
                 </div>
             </div>
         </div>
     </main>
     <footer>
         <address id="footer1">
-            <p>Para maiores contatos</p>
-            <p><a href="#">jfk@jfx.com.br</a></p>
+            <h5>Para maiores contatos</h5>
+            <h5><a href="#">jfk@jfx.com.br</a></h5>
         </address>
-        <p id="footer2">Copyright 2022 - Todos os direitos reservados.</p>
+        <h5 id="footer2">Copyright 2022 - Todos os direitos reservados.</h5>
     </footer>
     <script src="./index.js"></script>
 </body>
