@@ -20,7 +20,7 @@ ul {
 }
 
 ul img {
-  width: 10%;
+  width: 130px;
 }
 
 li {
@@ -120,7 +120,13 @@ footer{
 }
 
 #footer1{
-  margin-left: 10px;  
+  margin-left: 10px;
+  
+}
+
+#footer1 a{
+  color: white;
+  text-decoration: none;
 }
 
 #footer2{

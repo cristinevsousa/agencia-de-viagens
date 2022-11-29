@@ -21,7 +21,7 @@ ul {
 }
 
 ul img {
-  width: 10%;
+  width: 130px;
 }
 
 li {
@@ -88,11 +88,18 @@ button:hover {
 }
 
 footer{
+  margin-top: 15px;
   background-color: #333333;
 }
 
 #footer1{
-  margin-left: 10px;  
+  margin-left: 10px;
+  
+}
+
+#footer1 a{
+  color: white;
+  text-decoration: none;
 }
 
 #footer2{

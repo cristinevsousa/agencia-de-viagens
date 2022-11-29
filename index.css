@@ -20,7 +20,7 @@ ul {
 }
 
 ul img {
-  width: 10%;
+  width: 130px;
 }
 
 li {
@@ -154,7 +154,6 @@ main{
 }
 
 .card {
-  /* background-color: #04AA6D; */
   border-radius: .6rem;
   display: flex;
   flex-direction: column;
@@ -163,7 +162,6 @@ main{
 }
 
 .card-img {
-  /* background-color: #b5b9c1; */
   display: flex;
   flex: 4;
   overflow: hidden;
@@ -174,7 +172,6 @@ main{
 }
 
 .card-btn {
-  /* background-color: #606570; */
   display: flex;
   flex: 2;
   flex-direction: column;
