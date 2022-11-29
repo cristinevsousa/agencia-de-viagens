@@ -20,6 +20,10 @@ ul {
   background-color: #333333;
 }
 
+ul img {
+  width: 10%;
+}
+
 li {
   float: right;
 }
